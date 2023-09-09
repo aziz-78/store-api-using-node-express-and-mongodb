@@ -1,5 +1,5 @@
  const mongoose = require("mongoose")
- const schema =new mongoose.schema({
+ const schema = mongoose.Schema({
  name:{
     type:String,
     required:[true,"product name must be provided"]
@@ -29,4 +29,4 @@
  }
  })
 
- module.exports= mongoose.model('product',schema)
+ module.exports= mongoose.model('Product',schema)
